@@ -4,7 +4,7 @@
 Recriando a Página do Alura Plus seguindo o modelo do FIGMA
 
 ## 🚀 Acesse o projeto
-👉 [Clique aqui para ver online](SEU-LINK-GITHUB-PAGES)
+👉 [Clique aqui para ver online](https://devgabrielporto07.github.io/Front-End-Alura-HTML-e-CSS/)
 
 ## 🛠️ Tecnologias utilizadas
 
