@@ -1,0 +1,457 @@
+/* ========== VARIÁVEIS CSS ========== */
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundário: #C0C0C0;
+    --botão-azul: #167BF7;
+    --cord-de-fundo: #00030C;
+    --fonte-principal: "Inter";
+    --roxo-click: #831C91;
+    --botao-azul-efeito: #3a90fa;
+}
+
+/* ========== ESTILIZAÇÃO GLOBAL ========== */
+body {
+    background-color: var(--cord-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+  
+
+/* ========== RESET CSS ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ========== PRINCIPAL - Hero ========== */
+/* Seção de apresentação Combo+ com fundo escuro (Background.png) */
+.principal {
+    background-image: url("ImagensFigma/Background.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    display: flex;
+    align-items: center;
+    background-size: 105%;
+    
+}
+
+/* ========== CONTANEIR - Grid com 2 colunas ========== */
+/* Estrutura base: divide a página em 2 colunas 50% cada */
+
+.contaneir {
+    align-items: center;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+}
+
+/* ========== CAIXA HERO ========== */
+/* Container interno do Hero: agrupa título, imagem Combo+ e botões */
+
+.contaneir__caixa {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3em 2em 3em 5em;
+    gap: 1em;
+}
+
+/* ========== TÍTULO HERO ========== */
+/* Título principal: "Com o Combo+, você pode aproveitar..." */
+
+.contaneir__titulo {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: left;
+    max-width: 620px;
+    
+}
+
+/* ========== IMAGEM COMBO ========== */
+/* Imagem do Combo+ (Alura+ e Alura Língua) no Hero */
+
+.contaneir__imagem {
+    width: 100%;
+    max-width: 340px;
+    margin-top: 1em;
+    margin-right: auto;
+
+}
+
+/* ========== BOTÃO PRIMÁRIO ========== */
+/* Botão azul: "Assine por 12x de R$ 120,00*" (Hero) */
+
+.contaneir__botao {
+    background-color: var(--botão-azul);
+    border-radius: 16px;
+    display: block;
+    padding: 1em;
+    color: var(--branco-principal);
+    text-decoration: none;
+    width: 100%;
+    max-width: 520px;
+    text-align: center;
+    
+}
+
+/* ========== BOTÃO SECUNDÁRIO ========== */
+/* Botão com borda: "Assinar somente o Alura+" (Hero) */
+
+.contaneir__botaosecundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+    border-radius: 16px;
+    display: block;
+    padding: 1em;
+    color: var(--branco-principal);
+    text-decoration: none;
+    width: 100%;
+    max-width: 520px;
+    text-align: center;
+}
+
+/* ========== AVISO ========== */
+/* Texto pequeno: "*O preço pode variar..." (Hero) */
+
+.contaneir__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundário);
+    text-align: left;
+    max-width: 600px;
+    
+}
+
+/* ========== CONTAINER SEÇÕES ========== */
+/* Estrutura para: Plataformas, Combo+, Baixe seus cursos */
+
+.secundario {
+    display: flex;
+    align-items: center;
+    padding: 3em 6em;
+    gap: 4em;
+    height: 100vh;
+}
+
+/* ========== DESCRIÇÃO SEÇÕES ========== */
+/* Container com padding para texto e título das seções */
+
+.contaneir__descricao {
+    flex: 1;
+    padding: 1em;
+    text-align: left;
+}
+
+/* ========== TÍTULO DESCRIÇÃO ========== */
+/* Títulos grandes: "Assista do seu jeito", "Baixe seus cursos" */
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 1em;
+}
+
+/* ========== TEXTO DESCRIÇÃO ========== */
+/* Textos explicativos em cinza das seções */
+
+.descricao__texto {
+    color: var(--cinza-secundário);
+    line-height: 1.6;
+}
+
+/* ========== IMAGEM SEÇÕES ========== */
+/* Imagens: Monitor/Celular, Telas Alura, Notebook */
+
+.secundario__imagem {
+    width: 100%;
+    max-width: 500px;
+    flex: 1;
+}
+
+/* ========== BOTÃO SEÇÃO COMBO+ ========== */
+/* Botão "Assinar o Combo+" na seção de descrição */
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+    width: auto;
+}
+
+/* ========== SEÇÃO DISPOSITIVOS ========== */
+/* Seção final: "Disponível nos seus dispositivos favoritos" */
+
+.dispositivos {
+    text-align: center;
+    padding: 4em 2em;
+}
+
+/* ========== TÍTULO DISPOSITIVOS ========== */
+/* Título: "Disponível nos seus dispositivos favoritos" */
+
+.dispositivos__titulo {
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+
+/* ========== LISTA DISPOSITIVOS ========== */
+/* Container flex com 3 itens: TV, Computadores, Celular */
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+    gap: 6em;
+}
+
+/* ========== ITEM LISTA ========== */
+/* Texto dos ícones: "TV", "Computadores", "Celular" */
+
+.lista__item {
+    font-size: 32px;
+}
+
+/* ========= RODAPÉ/FOOTER ========= */
+/* Texto dos ícones: Alura+ */
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.rodape__logo {
+    margin-bottom: 2em;
+}
+
+/* Seleciona todos os li */
+.rodape__lista li a {
+    text-decoration: none;
+    color: var(--branco-principal);
+}
+
+/* gap move para o meio lados  */
+.rodape__lista {
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+}
+
+.rodape__texto {
+    font-size: 14px;
+    margin: 1em;
+    color: var(--cinza-secundário);
+}
+
+/* Estilização da passagem do mouse em cima dos ícons do footer */
+.lista__link a:hover {
+    color: var(--botão-azul);
+}
+/* Estilização do click no Assine o Combo + Na hora do clique fica roxo */
+.lista__link a:active {
+    color: var(--roxo-click);
+}
+/* PseudoClasses Efeitos em geral */
+.contaneir__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cord-de-fundo);
+}
+
+.contaneir__botaosecundario:hover {
+    background-color: var(--branco-principal);
+    color: var(--cord-de-fundo);
+}
+/*  Pseudoclasee: uma propriedade que é adicionada ao final dos seletores que especifica o estado que esse elemento está. 
+Ele detecta, por exemplo, se o elemento está com um mouse em cima dele, construindo uma experiência interativa com o usuário. */
+
+
+/* ========== MEDIA QUERIES - RESPONSIVIDADE ========== */
+
+/* Tablet: até 1024px */
+@media (max-width: 1024px) {
+    .contaneir {
+        grid-template-columns: 1fr;
+        height: auto;
+        min-height: auto;
+    }
+    
+    .contaneir__caixa {
+        margin: 0 2em;
+        padding: 3em 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .principal {
+        background-size: auto;
+    }
+    
+    .secundario {
+        flex-direction: column;
+        padding: 2em 1em;
+        height: auto;
+    }
+    
+    .contaneir__descricao {
+        padding: 1em;
+    }
+    
+    .descricao__titulo {
+        font-size: 32px;
+    }
+    
+    .dispositivos__lista {
+        gap: 2em;
+        margin: 2em 0;
+    }
+}
+
+/* Mobile: até 768px */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    
+    .principal {
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .contaneir {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    
+    .contaneir__caixa {
+        margin: 0 1em;
+        padding: 2em 0;
+    }
+    
+    .contaneir__titulo {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+    .contaneir__imagem {
+        width: 100%;
+        max-width: 300px;
+        margin: 1em auto;
+    }
+    
+    .contaneir__botao,
+    .contaneir__botaosecundario {
+        padding: 0.8em;
+        font-size: 14px;
+        width: 100%;
+    }
+    
+    .contaneir__aviso {
+        font-size: 11px;
+    }
+    
+    .secundario {
+        flex-direction: column;
+        padding: 1.5em 1em;
+        gap: 1.5em;
+        height: auto;
+    }
+    
+    .contaneir__descricao {
+        padding: 0;
+        text-align: center;
+    }
+    
+    .descricao__titulo {
+        font-size: 24px;
+        margin-bottom: 0.5em;
+    }
+    
+    .descricao__texto {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    
+    .secundario__imagem {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .secundario__botao {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .dispositivos {
+        padding: 1em;
+    }
+    
+    .dispositivos__titulo {
+        font-size: 24px;
+        margin-bottom: 1em;
+    }
+    
+    .dispositivos__lista {
+        flex-direction: column;
+        gap: 1.5em;
+        margin: 1.5em 0;
+    }
+    
+    .lista__item {
+        font-size: 20px;
+    }
+    
+    .rodape {
+        margin: 1.5em 1em;
+        padding: 0;
+    }
+    
+    .rodape__logo {
+        margin-bottom: 1.5em;
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    .rodape__lista {
+        gap: 1em;
+        flex-direction: column;
+        padding: 0 1em;
+    }
+    
+    .rodape__lista li {
+        padding: 0.5em 0;
+    }
+    
+    .rodape__texto {
+        font-size: 12px;
+        margin: 0.5em 0;
+        line-height: 1.4;
+    }
+}
+
+/* Extra pequeno: até 480px */
+@media (max-width: 480px) {
+    .contaneir__titulo {
+        font-size: 18px;
+    }
+    
+    .descricao__titulo {
+        font-size: 20px;
+    }
+    
+    .dispositivos__titulo {
+        font-size: 20px;
+    }
+    
+    .contaneir__botao,
+    .contaneir__botaosecundario {
+        font-size: 13px;
+        padding: 0.7em;
+    }
+}
