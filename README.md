@@ -11,20 +11,6 @@ Recriando a Página do Alura Plus seguindo o modelo do FIGMA
 - HTML5
 - CSS3
 
-## Conceitos:
-
- Semântica HTML (uso de <section>, <footer>, <ul>, <li>)
- Meta tags e viewport
- Acessibilidade básica com alt nas imagens
- Variáveis CSS (Custom Properties com :root)
- Flexbox
- CSS Grid
- Responsividade com Media Queries
- Pseudo-classes (:hover, :active)
- Background com imagem (background-size, background-position)
- Box Model (margin, padding, box-sizing)
-
-
 ## 📸 Preview
 
 <img width="1906" height="922" alt="{EC9E6786-E7F6-4864-B5DF-2DA52144AC6A}" src="https://github.com/user-attachments/assets/e8cf51db-c1e5-49a0-88b4-d4eaa29cd3d2" />
