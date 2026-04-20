@@ -13,14 +13,9 @@ Recriando a Página do Alura Plus seguindo o modelo do FIGMA
 
 ## Conceitos:
 
-HTML
-
  -Semântica HTML (uso de <section>, <footer>, <ul>, <li>)
  -Meta tags e viewport
  -Acessibilidade básica com alt nas imagens
-
-CSS
-
  -Variáveis CSS (Custom Properties com :root)
  -Flexbox
  -CSS Grid
